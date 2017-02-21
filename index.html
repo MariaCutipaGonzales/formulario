@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Mi primer formulario</title>
+	<link rel="stylesheet" href="/css/main.css" type="text/css">
+</head>
+<body >
+<nav style="text-align:center">
+	<h1 align="center">Formulario de Datos</h1>
+	<hr></hr>
+	<section>
+	<form action="" id="form" class="form">
+		<div>
+			<label for="nombre">Nombre</label><br>
+			<input type="text" name="nombre" required>
+		</div><br>
+		<div>
+			<label for="apellido">Apellido</label><br>
+			<input type="text" name="apellido" required>
+		</div><br>
+		<div>
+			<label for="telefono">Telefono</label><br>
+			<input type="text" name="telefono" pattern="[/0-9]{9}" required>
+		</div><br>
+		<div>
+			<label for="autos">Escoge tu carro para continuar</label><br>
+			<select name="autos" required>
+				<option value="">--Escoge tu carro--</option>
+				<option value="volvo">Volvo</option>
+				<option value="mercedes">Mercedes</option>
+				<option value="audi">Audi</option>
+				<option value="toyota">Toyota</option>
+			</select>
+		</div><br>
+		<div>
+			<label for="email">Email</label><br>			
+			<input type="email" name="email" required>
+		</div><br>
+		<div>
+			<label for="password">Contraseña</label><br>
+			<input type="password" name="password" pattern=".{6,}" required>
+		</div><br>
+		<div>
+			<input type="submit" value="send" id="submit">
+		</div>
+		</form>
+	</section>
+</body>
+</html>
